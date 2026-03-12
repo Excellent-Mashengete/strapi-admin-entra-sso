@@ -1,0 +1,34 @@
+{
+  "name": "strapi-admin-entra-sso",
+  "version": "1.0.0",
+  "description": "Microsoft Entra ID (Azure AD) SSO for the Strapi v5 admin panel — no Enterprise licence required",
+  "main": "./strapi-server.js",
+  "keywords": [
+    "strapi",
+    "plugin",
+    "sso",
+    "azure",
+    "entra",
+    "microsoft",
+    "msal",
+    "admin",
+    "authentication"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_ORG/strapi-admin-entra-sso.git"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "strapi-admin-entra-sso",
+    "displayName": "Microsoft Entra Admin SSO"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": ">=5.0.0"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^2.0.0",
+    "jsonwebtoken": "^9.0.0"
+  }
+}
