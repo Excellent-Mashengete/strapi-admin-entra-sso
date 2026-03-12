@@ -1,7 +1,13 @@
 {
   "name": "strapi-admin-entra-sso",
   "version": "1.0.0",
-  "description": "Microsoft Entra ID (Azure AD) SSO for the Strapi v5 admin panel — no Enterprise licence required",
+  "description": "Plug-in for single sign-on with Strapi! using Microsoft Entra ID (Azure AD)",
+  "strapi": {
+    "displayName": "Single Sign On",
+    "name": "strapi-admin-entra-sso",
+    "description": "Version 5 enables single sign-on",
+    "kind": "plugin",
+  },
   "main": "./strapi-server.js",
   "keywords": [
     "strapi",
@@ -14,21 +20,29 @@
     "admin",
     "authentication"
   ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/YOUR_ORG/strapi-admin-entra-sso.git"
-  },
-  "strapi": {
-    "kind": "plugin",
-    "name": "strapi-admin-entra-sso",
-    "displayName": "Microsoft Entra Admin SSO"
-  },
   "peerDependencies": {
     "@strapi/strapi": ">=5.0.0"
   },
   "dependencies": {
     "@azure/msal-node": "^2.0.0",
     "jsonwebtoken": "^9.0.0"
-  }
+  },
+  "author": {
+    "name": "Excellent-Mashengete",
+    "url": "https://github.com/Excellent-Mashengete/strapi-admin-entra-sso"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Excellent-Mashengete/strapi-admin-entra-sso"
+  },
+  "maintainers": [
+    {
+      "name": "Excellent-Mashengete"
+    }
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0 <=24.x.x",
+    "npm": ">=6.0.0"
+  },
 }
