@@ -36,16 +36,16 @@
     "watchman": "^1.0.0"
   },
   "author": {
-    "name": "Excellent-Mashengete",
-    "url": "https://github.com/Excellent-Mashengete/strapi-admin-entra-sso"
+    "name": "excellentmashengete",
+    "url": "https://github.com/excellentmashengete/strapi-admin-entra-sso"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Excellent-Mashengete/strapi-admin-entra-sso"
+    "url": "https://github.com/excellentmashengete/strapi-admin-entra-sso"
   },
   "maintainers": [
     {
-      "name": "Excellent-Mashengete"
+      "name": "excellentmashengete"
     }
   ],
   "devDependencies": {
