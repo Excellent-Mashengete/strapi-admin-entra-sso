@@ -6,7 +6,14 @@
     "displayName": "Single Sign On",
     "name": "strapi-admin-entra-sso",
     "description": "Version 5 enables single sign-on",
-    "kind": "plugin",
+    "kind": "plugin"
+  },
+  "scripts": {
+    "main": "node strapi-server.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "node --check strapi-server.js && node --check server/bootstrap.js && node --check server/controllers/sso.js",
+    "ci": "npm run lint && npm test"
   },
   "main": "./strapi-server.js",
   "keywords": [
@@ -25,7 +32,8 @@
   },
   "dependencies": {
     "@azure/msal-node": "^2.0.0",
-    "jsonwebtoken": "^9.0.0"
+    "jsonwebtoken": "^9.0.0",
+    "watchman": "^1.0.0"
   },
   "author": {
     "name": "Excellent-Mashengete",
@@ -40,9 +48,12 @@
       "name": "Excellent-Mashengete"
     }
   ],
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0 <=24.x.x",
     "npm": ">=6.0.0"
-  },
+  }
 }

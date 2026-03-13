@@ -6,10 +6,7 @@ const ssoController = require('./server/controllers/sso');
 module.exports = {
   register() {},
   bootstrap,
-
-  // ── Default config values — overridden by config/plugins.js ───────────────
-  // roleMapping and defaultRole are both optional.
-  // If neither is configured the user is assigned the first available Strapi admin role.
+  
   config: {
     default: {
       clientId:     '',

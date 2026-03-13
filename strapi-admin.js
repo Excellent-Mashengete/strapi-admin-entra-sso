@@ -1,6 +1,5 @@
 import React from 'react';
 
-// ── "Sign in with Microsoft" button ─────────────────────────────────────────
 const MicrosoftLoginButton = () => {
   const loginUrl = `${window.location.origin}/api/sso/login`;
 
@@ -36,14 +35,10 @@ const MicrosoftLoginButton = () => {
   );
 };
 
-// ── Plugin admin entry ────────────────────────────────────────────────────────
 export default {
   register() {},
 
   bootstrap(app) {
-    // Inject the Microsoft login button below the Strapi admin login form.
-    // Strapi v5 exposes the 'Auth' injection zone which renders components
-    // at the bottom of the /admin/auth/login page.
     app.injectComponent('Auth', 'bottom', {
       name:      'microsoft-entra-sso-button',
       Component: MicrosoftLoginButton,
